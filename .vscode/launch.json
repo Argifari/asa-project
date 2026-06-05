@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Kerja/ASA/tugasBesar",
-      "program": "c:/Kerja/ASA/tugasBesar/build/Debug/outDebug",
+      "cwd": "c:/Kerja/ASA/tugasBesar/main",
+      "program": "c:/Kerja/ASA/tugasBesar/main/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
