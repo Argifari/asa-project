@@ -1,0 +1,293 @@
+[
+    {
+        "moveId": 1,
+        "moveName": "Close Slash",
+        "moveNotation" : "c.S",
+        "damage": 44,
+        "startupFrame": 7,
+        "activeFrame": 6,
+        "recoveryFrame": 10,
+        "attackLevel": 4,
+        "hitstun": 21,
+        "proration": 1.0,
+        "validCancel": [2,3,4,7,8,9,10,11,12,13,14,15,17,18,19,20,21]
+    },
+    {
+        "moveId": 2,
+        "moveName": "Standing High Slash",
+        "moveNotation" : "5H",
+        "damage": 52,
+        "startupFrame": 11,
+        "activeFrame": 4,
+        "recoveryFrame": 20,
+        "attackLevel": 4,
+        "hitstun": 21,
+        "proration": 0.9,
+        "validCancel": [12,13,17,18,19,20,21]
+    },
+    {
+        "moveId": 3,
+        "moveName": "Crouch Slash",
+        "moveNotation" : "2S",
+        "damage": 34,
+        "startupFrame": 10,
+        "activeFrame": 6,
+        "recoveryFrame": 15,
+        "attackLevel": 2,
+        "hitstun": 14,
+        "proration": 0.9,
+        "validCancel": [2,7,12,13,14,15,17,18,19,20,21]
+    },
+    {
+        "moveId": 4,
+        "moveName": "Far Slash",
+        "moveNotation" : "f.S",
+        "damage": 29,
+        "startupFrame": 10,
+        "activeFrame": 2,
+        "recoveryFrame": 13,
+        "attackLevel": 3,
+        "hitstun": 17,
+        "proration": 0.9,
+        "validCancel": [2,12,13,14,15,17,18,20,21]
+    },
+    {
+        "moveId": 5,
+        "moveName": "Standing Kick",
+        "moveNotation" : "5K",
+        "damage": 14,
+        "startupFrame": 5,
+        "activeFrame": 1,
+        "recoveryFrame": 25,
+        "attackLevel": 1,
+        "hitstun": 12,
+        "proration": 0.8,
+        "validCancel": [8,9,10,11,12,13,14,15,17,18,19,20,21]
+
+    },
+    {
+        "moveId": 6,
+        "moveName": "Crouch Kick",
+        "moveNotation" : "2K",
+        "damage": 28,
+        "startupFrame": 6,
+        "activeFrame": 3,
+        "recoveryFrame": 11,
+        "attackLevel": 1,
+        "hitstun": 12,
+        "proration": 0.7,
+        "validCancel": [9,10,12,13,14,15,17,18,21]
+
+    },
+    {
+        "moveId": 7,
+        "moveName": "Crouch High Slash",
+        "moveNotation" : "2H",
+        "damage": 46,
+        "startupFrame": 11,
+        "activeFrame": 5,
+        "recoveryFrame": 31,
+        "attackLevel": 4,
+        "hitstun": 21,
+        "proration": 0.9,
+        "validCancel": [12,13,14,15,17,18,19,20,21]
+
+    },
+    {
+        "moveId": 8,
+        "moveName": "Forward Slash",
+        "moveNotation" : "6S",
+        "damage": 45,
+        "startupFrame": 15,
+        "activeFrame": 6,
+        "recoveryFrame": 24,
+        "attackLevel": 3,
+        "hitstun": 17,
+        "proration": 0.9,
+        "validCancel": [12,13,17,18,19,20,21]
+
+    },
+    {
+        "moveId": 9,
+        "moveName": "Forward High Slash",
+        "moveNotation" : "6H",
+        "damage": 60,
+        "startupFrame": 9,
+        "activeFrame": 3,
+        "recoveryFrame": 43,
+        "attackLevel": 4,
+        "hitstun": 21,
+        "proration": 0.9,
+        "validCancel": []
+
+    },
+    {
+        "moveId": 10,
+        "moveName": "Crouch Dust",
+        "moveNotation" : "2D",
+        "damage": 36,
+        "startupFrame": 10,
+        "activeFrame": 3,
+        "recoveryFrame": 18,
+        "attackLevel": 3,
+        "hitstun": 17,
+        "proration": 0.9,
+        "validCancel": []
+
+    },
+    {
+        "moveId": 11,
+        "moveName": "Standing Dust",
+        "moveNotation" : "5D",
+        "damage": 50,
+        "startupFrame": 20,
+        "activeFrame": 3,
+        "recoveryFrame": 26,
+        "attackLevel": 2,
+        "hitstun": 14,
+        "proration": 0.8,
+        "validCancel": []
+
+    },
+    {
+        "moveId": 12,
+        "moveName": "Gun Flame",
+        "moveNotation" : "236P",
+        "damage": 40,
+        "startupFrame": 16,
+        "activeFrame": 6,
+        "recoveryFrame": 54,
+        "attackLevel": 2,
+        "hitstun": 14,
+        "proration": 0.8,
+        "validCancel": []
+
+    },
+    {
+        "moveId": 13,
+        "moveName": "Gun Flame Feint",
+        "moveNotation" : "214P",
+        "damage": 0,
+        "startupFrame": 0,
+        "activeFrame": 0,
+        "recoveryFrame": 25,
+        "attackLevel": 0,
+        "hitstun": 0,
+        "proration": 0.0,
+        "validCancel": []
+
+    },
+    {
+        "moveId": 14,
+        "moveName": "S Volcanic Viper",
+        "moveNotation" : "623S",
+        "damage": 40,
+        "startupFrame": 9,
+        "activeFrame": 14,
+        "recoveryFrame": 40,
+        "attackLevel": 2,
+        "hitstun": 14,
+        "proration": 0.6,
+        "validCancel": []
+
+    },
+    {
+        "moveId": 15,
+        "moveName": "H Volcanic Viper",
+        "moveNotation" : "623H",
+        "damage": 50,
+        "startupFrame": 14,
+        "activeFrame": 5,
+        "recoveryFrame": 29,
+        "attackLevel": 2,
+        "hitstun": 14,
+        "proration": 0.8,
+        "validCancel": [16]
+
+    },
+    {
+        "moveId": 16,
+        "moveName": "Side Winder Ignited",
+        "moveNotation" : "623H-6H",
+        "damage": 90,
+        "startupFrame": 12,
+        "activeFrame": 0,
+        "recoveryFrame": 0,
+        "attackLevel": 0,
+        "hitstun": 0,
+        "proration": 0.0,
+        "validCancel": []
+
+    },
+    {
+        "moveId": 17,
+        "moveName": "Bandit Revolver",
+        "moveNotation" : "236KK",
+        "damage": 45,
+        "startupFrame": 12,
+        "activeFrame": 8,
+        "recoveryFrame": 24,
+        "attackLevel": 2,
+        "hitstun": 14,
+        "proration": 0.8,
+        "validCancel": []
+
+    },
+    {
+        "moveId": 18,
+        "moveName": "Bandit Bringer",
+        "moveNotation" : "214K",
+        "damage": 60,
+        "startupFrame": 30,
+        "activeFrame": 7,
+        "recoveryFrame": 16,
+        "attackLevel": 4,
+        "hitstun": 21,
+        "proration": 0.8,
+        "validCancel": []
+
+    },
+    {
+        "moveId": 19,
+        "moveName": "Night Raid Vortex",
+        "moveNotation" : "214S",
+        "damage": 40,
+        "startupFrame": 15,
+        "activeFrame": 2,
+        "recoveryFrame": 32,
+        "attackLevel": 3,
+        "hitstun": 17,
+        "proration": 0.8,
+        "validCancel": [5,6]
+             
+    },
+    {
+        "moveId": 20,
+        "moveName": "Fafnir",
+        "moveNotation" : "41236H",
+        "damage": 60,
+        "startupFrame": 20,
+        "activeFrame": 4,
+        "recoveryFrame": 18,
+        "attackLevel": 4,
+        "hitstun": 21,
+        "proration": 0.8,
+        "validCancel": []
+    },
+    {
+        "moveId": 21,
+        "moveName": "Tyrant Rave",
+        "moveNotation" : "632146H",
+        "damage": 120,
+        "startupFrame": 9,
+        "activeFrame": 20,
+        "recoveryFrame": 41,
+        "attackLevel": 4,
+        "hitstun": 21,
+        "proration": 1.0,
+        "validCancel": []
+        
+    }
+
+
+]
