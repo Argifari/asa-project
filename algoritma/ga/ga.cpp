@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include <algorithm>
 #include "ga.h"
-#include "../dataRead/read_data.h"
+#include "../model/model.h"
 
 using namespace std;
 

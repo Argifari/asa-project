@@ -1,5 +1,5 @@
-#ifndef READ_DATA_H
-#define READ_DATA_H
+#ifndef MODEL_H
+#define MODEL_H
 
 #include <string>
 #include <vector>

@@ -1,11 +1,13 @@
 #include <iostream>
 #include "../json.hpp"
-#include "read_data.h"
+#include "model.h"
 #include <fstream>
+#include "./variables/variables.h"
 
 using namespace std;
 
 using json = nlohmann::json;
+
 
 MoveData searchMoveById(int id, const vector<MoveData>& databaseSol) {
     for (const auto& m : databaseSol) {
@@ -59,23 +61,4 @@ void readMoveData(const string& sourceFile, vector<MoveData>& listMoves) {
     " simpul gerakan ke memori.\n";
 
 }
-// void cetakPreviewGraf(const std::vector<moveData>& daftarGerakan) {
-//     std::cout << "=======================================================\n";
-//     std::cout << "  PREVIEW STRUKTUR ADJACENCY LIST (GRAF GERAKAN SOL)   \n";
-//     std::cout << "=======================================================\n";
-    
-//     // Cetak 3 contoh gerakan pertama (Close Slash, 5H, 2S) beserta opsi cancelnya
-//     for (size_t i = 0; i < 3 && i < daftarGerakan.size(); ++i) {
-//         const auto& m = daftarGerakan[i];
-//         std::cout << "Gerakan  : " << m.moveName << " (" << m.moveNotation << ")\n";
-//         std::cout << "Damage   : " << m.damage << " | Startup: " << m.startupFrame << " Frame\n";
-//         std::cout << "Edge Out : " << m.moveNotation << " -> CANCELLABLE KE ID [";
-        
-//         for (size_t j = 0; j < m.validCancel.size(); ++j) {
-//             std::cout << m.validCancel[j];
-//             if (j < m.validCancel.size() - 1) std::cout << ", ";
-//         }
-//         std::cout << "]\n";
-//         std::cout << "-------------------------------------------------------\n";
-//     }
-// }
+

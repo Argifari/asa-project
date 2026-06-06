@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include "greedy.h"
-#include "../dataRead/read_data.h"
+#include "../model/model.h"
 
 using namespace std;
 
@@ -26,32 +26,32 @@ void greedyAlgorithm(int starterId,vector<MoveData>& databaseSol) {
     bool isKomboBerjalan = true;
 
     while (isKomboBerjalan) {
-        MoveData dataCurrentMove = searchMoveById(starterId, databaseSol);
+        MoveData currentMove = searchMoveById(starterId, databaseSol);
 
         int idPickMove = -1;
         int damageLocal = -1;
 
         State hasilState("",0,0,0,1);
 
-        for (const auto& m : dataCurrentMove.validCancel) {
-            MoveData tempMove = searchMoveById(m, databaseSol);
-            int currHitstun = currentState.enemy_hitstun_left - tempMove.startupFrame;
+        for (const auto& child : currentMove.validCancel) {
+            MoveData childMove = searchMoveById(child, databaseSol);
+            int currHitstun = currentState.enemy_hitstun_left - childMove.startupFrame;
 
             if (currHitstun >= 0) {
-                int tempDamage = static_cast<int>(tempMove.damage * currentState.current_proration);
+                int tempDamage = static_cast<int>(childMove.damage * currentState.current_proration);
                 if (tempDamage <= 0) continue;
-                string nextMove = tempMove.moveNotation;
-                int decayedHitstun = tempMove.hitstun - (currentState.combo_count*DECAY_FACTOR);
+                string nextMove = childMove.moveNotation;
+                int decayedHitstun = childMove.hitstun - (currentState.combo_count*DECAY_FACTOR);
                 if (decayedHitstun < 2) decayedHitstun = 2;
 
                 int nextHitstun = currHitstun + decayedHitstun;
-                double nextProration = tempMove.proration*currentState.current_proration;
+                double nextProration = childMove.proration*currentState.current_proration;
                 int nextTotalDamage = currentState.total_damage + tempDamage;
                 int nextComboCount = currentState.combo_count + 1;
 
                 if (tempDamage > damageLocal) {
                     damageLocal = tempDamage;
-                    idPickMove = m;
+                    idPickMove = child;
                     hasilState = State(
                         nextMove,
                         nextHitstun,

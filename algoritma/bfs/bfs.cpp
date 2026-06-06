@@ -4,7 +4,7 @@
 #include <vector>
 #include <queue>
 #include "bfs.h"
-#include "../dataRead/read_data.h"
+#include "../model/model.h"
 
 
 using namespace std;

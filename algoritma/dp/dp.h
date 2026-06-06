@@ -6,6 +6,12 @@
 
 using namespace std;
 
+
+/**
+ * @brief Tipe bentukan untuk memoisasi.*/
+// Atribut : 
+// memoDamage untuk menyimpam damage
+// memoRoute untuk menyimpan rute 
 struct MemoTable {
     map<string, int> memoDamage;
     map<string, vector<string>> memoRoute;

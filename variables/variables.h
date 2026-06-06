@@ -5,8 +5,13 @@
 
 using namespace std;
 
+
+
+// *@brief Konstanta untuk mengurangi hitstun setiap hit
 const int DECAY_FACTOR = 1;
 
+
+// *@brief Penyimpanan setiap nilai pada Node 
 struct MoveData {
     int moveID;
     string moveName;
@@ -21,6 +26,7 @@ struct MoveData {
     vector<int> validCancel;
 };
 
+// *@brief Penyimpanan setiap ruang status saat penjelajahan 
 struct State {
     std::string current_move;
     int enemy_hitstun_left;
@@ -32,6 +38,8 @@ struct State {
         : current_move(m), enemy_hitstun_left(h), current_proration(p), total_damage(d), combo_count(c) {}
 };
 
+
+// *@brief Penyimpanan setiap node pada queue BFS  
 struct BfsNode {
     State state;
     vector<string> rute;

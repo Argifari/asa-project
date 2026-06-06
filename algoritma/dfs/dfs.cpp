@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include "dfs.h"
-#include "../dataRead/read_data.h"
+#include "../model/model.h"
 
 
 using namespace std;

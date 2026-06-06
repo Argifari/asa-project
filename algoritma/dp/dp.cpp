@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include "dp.h"
-#include "../dataRead/read_data.h"
+#include "../model/model.h"
 
 
 using namespace std;
