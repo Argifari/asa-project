@@ -9,7 +9,7 @@
 #include "./algoritma/dp/dp.h"
 #include "./algoritma/ga/ga.h"
 
-#include "./algoritma/dataRead/read_data.h"
+#include "./algoritma/model/model.h"
 
 using namespace std;
 
